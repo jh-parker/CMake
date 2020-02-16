@@ -11,3 +11,7 @@ Testing
 
 # Visual Studio Code
 .vscode/
+
+# Build
+Help/guide/tutorial/**/*build/*
+build/CMakeFiles/3.16.4/CompilerIdC/Debug/CompilerIdC.tlog/*

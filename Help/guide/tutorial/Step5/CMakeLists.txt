@@ -10,11 +10,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # should we use our own math functions
 option(USE_MYMATH "Use tutorial provided math implementation" ON)
 
-# check system and set symbols as inputs to TutorialConfig.h.in.
-include(CheckFunctionExists)
-check_function_exists(log HAVE_LOG)
-check_function_exists(exp HAVE_EXP)
-
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file(TutorialConfig.h.in TutorialConfig.h)

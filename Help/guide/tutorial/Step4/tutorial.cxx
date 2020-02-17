@@ -6,7 +6,7 @@
 #include "TutorialConfig.h"
 
 // should we include the MathFunctions header?
-#ifdef USE_MYMATH
+#ifdef USE_MYMATH // Remember that if USE_MYMATH is defined in a different .h, the other .h must be included before checking USE_MYMATH.
 #  include "MathFunctions.h"
 #endif
 

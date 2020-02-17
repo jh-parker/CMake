@@ -30,3 +30,9 @@ target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS}) # Used to be MathFunctions,
 target_include_directories(Tutorial PUBLIC
                            "${PROJECT_BINARY_DIR}" # i.e. this is the folder that build outputs to, but our .cxx depends on 
                            )
+
+# add the install targets
+install(TARGETS Tutorial DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+  DESTINATION include
+  )
